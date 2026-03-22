@@ -36,11 +36,24 @@
     justify-content: center;
     align-items: center;
     border-radius: 15px;
-    box-shadow: black 20px outside;
     height: 60px;
     width: 110px;
-    grid-row: 2;
+    grid-row: 3;
     grid-column: 4/5; 
+}
+
+#nested-hero-grid p {
+    font-family: "Annie Use Your Telescope", Arial, Helvetica, sans-serif;
+    background-color: rgba(165, 0, 0, 0.3);
+    color: #fff;
+    font-size: 18px;
+    height: 60px;
+    width: 250px;
+    border: 2px dotted white;
+    border-radius: 20px;
+    text-shadow: 2px 2px 4px black;
+    padding-left: 10px;
+    grid-row: 3;
 }
 
 @media screen and (min-width: 768px) {
@@ -55,10 +68,20 @@
         width: 130px;
         font-size: 30px;
         grid-column: 10/12;
+        grid-row: 3;
     }
     .full-width-grid-con {
     height: 400px;
     }
+
+    #nested-hero-grid p {
+    font-size: 22px;
+    height: 75px;
+    width: 300px;
+    padding-left: 10px;
+    display: flex;
+    justify-content: center
+}
 }
 
 
@@ -71,6 +94,15 @@
     }  
     .full-width-grid-con {
     height: 500px;
+}
+
+#nested-hero-grid p {
+    font-size: 30px;
+    height: 90px;
+    width: 400px;
+    padding-left: 10px;
+    display: flex;
+    justify-content: center
 }
 
 }
@@ -88,6 +120,11 @@
         font-size: 25px;
         grid-column: 11/13;
     }  
+#nested-hero-grid p {
+    font-size: 30px;
+    height: 90px;
+    width: 500px;
+}
 
 }
 
