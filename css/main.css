@@ -1,5 +1,5 @@
 .full-width-grid-con {
-    height: 600px;
+    height: 200px;
 }
 
 #hero-image {
@@ -15,31 +15,97 @@
 }
 
 #nested-hero-grid h2 {
+    margin: 0 auto;
+    font-family: "Tapestry", Arial, Helvetica, sans-serif;
     color: #fff;
-    font-size: 18px;
-    background-color: rgba(0,0,0,.3);
-    padding: 20px;
+    font-size: 27px;
+    background-color:rgb(136, 13, 13);
+    padding: 15px;
     text-align: center;
-    height: 50px;
+    height: 60px;
+    width: 100%;
 }
 
 #nested-hero-grid a {
+    font-family: "Annie Use Your Telescope", Arial, Helvetica, sans-serif;
     background-color: rgb(136, 13, 13);
     color: #fff;
+    font-size: 25px;
     text-decoration: none;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 15px;
+    box-shadow: black 20px outside;
+    height: 60px;
+    width: 110px;
+    grid-row: 2;
+    grid-column: 4/5; 
 }
 
 @media screen and (min-width: 768px) {
     #nested-hero-grid h2 {
         font-size: 36px;
         height: 100px;
+        padding-top: 25px;
     }
 
     #nested-hero-grid a {
         height: 60px;
+        width: 130px;
+        font-size: 30px;
+        grid-column: 10/12;
     }
+    .full-width-grid-con {
+    height: 400px;
+    }
+}
+
+
+@media screen and (min-width: 1000px) {
+  #nested-hero-grid a {
+        height: 70px;
+        width: 150px;
+        font-size: 25px;
+        grid-column: 10/12;
+    }  
+    .full-width-grid-con {
+    height: 500px;
+}
+
+}
+
+@media screen and (min-width: 1200px) {
+    #nested-hero-grid h2 {
+        font-size: 36px;
+        height: 100px;
+        padding-top: 25px;
+    }
+
+    #nested-hero-grid a {
+        height: 80px;
+        width: 150px;
+        font-size: 25px;
+        grid-column: 11/13;
+    }  
+
+}
+
+@media screen and (min-width: 1300px) {
+    #nested-hero-grid h2 {
+        font-size: 36px;
+        height: 100px;
+        padding-top: 25px;
+    }
+
+    #nested-hero-grid a {
+        height: 100px;
+        width: 250px;
+        font-size: 35px;
+        grid-column: 11/13;
+    }
+    .full-width-grid-con {
+    height: 400px;
+    }
+
 }
