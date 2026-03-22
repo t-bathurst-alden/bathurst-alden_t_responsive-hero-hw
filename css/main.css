@@ -1,0 +1,45 @@
+.full-width-grid-con {
+    height: 600px;
+}
+
+#hero-image {
+    justify-self: center;
+    grid-row: 1;
+    height: 100%;
+    object-fit: cover;
+}
+
+#nested-hero-grid {
+    grid-column: 2/3;
+    grid-row: 1;
+}
+
+#nested-hero-grid h2 {
+    color: #fff;
+    font-size: 18px;
+    background-color: rgba(0,0,0,.3);
+    padding: 20px;
+    text-align: center;
+    height: 50px;
+}
+
+#nested-hero-grid a {
+    background-color: rgb(136, 13, 13);
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+}
+
+@media screen and (min-width: 768px) {
+    #nested-hero-grid h2 {
+        font-size: 36px;
+        height: 100px;
+    }
+
+    #nested-hero-grid a {
+        height: 60px;
+    }
+}

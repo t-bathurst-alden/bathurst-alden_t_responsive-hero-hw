@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   <!-- in mobile set initial zoom level of page to 100%, set site size to equal device size-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/grid.css" rel="stylesheet" type="text/css">
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+    <title>Responsive Hero Homework</title>
+</head>
+    <body>
+        <h1 class="visually-hidden">Responsive Hero Image</h1>
+        <header class="full-width-grid-con">
+            <div class="col-span-full" id="hero-image">
+                <img 
+                sizes="
+                (min-width: 1200px) 1200px,
+                (min-width: 1000px) 1000px,
+                (min-width: 768px) 768px,
+                (min-width: 550px) 550px,
+                (min-width: 412px) 412px,
+                100vw"
+                srcset="
+                images/pieshero_z80wx5_c_scale,w_412.jpg 412w,
+                images/pieshero_z80wx5_c_scale,w_624.jpg 624w,
+                images/pieshero_z80wx5_c_scale,w_811.jpg 811w,
+                images/pieshero_z80wx5_c_scale,w_955.jpg 955w,
+                images/pieshero_z80wx5_c_scale,w_1075.jpg 1075w,
+                images/pieshero_z80wx5_c_scale,w_1200.jpg 1200w"
+                src="pieshero_z80wx5_c_scale,w_1200.jpg"
+                alt="">
+            </div>
+            <div id="nested-hero-grid" class="grid-con">
+                <h2 class="col-span-full">Hand Picked Cherry Pies</h2>
+               <a class="col-start-3 col-end-5 m-col-start-11 m-col-end-13" href="#">Order Now</a>
+            </div>
+        </header>      
+        <script src="js/main.js"></script>
+    </body>
+</html>
